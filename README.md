@@ -16,6 +16,11 @@ Expérimentation avec [terraform](https://www.terraform.io/) et Google Compute E
 export PROJECT_ID=playground-s-11-5dab122a
 ```
 
+## Principaux fichiers
+
+* [variables.tf](variables.tf) définitions des variables terraform
+* [main.tf](main.tf) description de l'infrastructure dans le langage terraform
+
 ## Utilisation de terraform
 
 ```bash
