@@ -18,8 +18,8 @@ export PROJECT_ID=playground-s-11-5dab122a
 
 ## Principaux fichiers
 
-* [variables.tf](variables.tf) définitions des variables terraform
-* [main.tf](main.tf) description de l'infrastructure dans le langage terraform
+* [variables.tf](variables.tf) définit les variables terraform
+* [main.tf](main.tf) définit l'infrastructure dans le langage terraform
 
 ## Utilisation de terraform
 
@@ -27,9 +27,11 @@ export PROJECT_ID=playground-s-11-5dab122a
 # Configuration des variables
 export TF_VAR_project_id=${PROJECT_ID}
 
-# Création de l'infrastructure
+# Téléchargement des modules terraform
 terraform init
+
 terraform plan
+# Création de l'infrastructure
 terraform apply -auto-approve
 
 # Suppression de l'infrastructure
@@ -54,7 +56,7 @@ gcloud config set project ${PROJECT_ID}
 gcloud compute instances list
 
 # se connecter en SSH à une machine
-gcloud compute ssh --zone "us-west1-a" "gcpbox-01"
+gcloud compute ssh --zone "us-west1-a" "gcebox-01"
 
 # Configurer ~/.ssh/config pour simplifier l'accès SSH avec ansible
 gcloud compute config-ssh
