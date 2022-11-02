@@ -16,15 +16,23 @@ Expérimentation avec [terraform](https://www.terraform.io/) et Google Compute E
 export PROJECT_ID=playground-s-11-5dab122a
 ```
 
+## Principaux fichiers
+
+* [variables.tf](variables.tf) définit les variables terraform
+* [main.tf](main.tf) définit l'infrastructure dans le langage terraform
+* `inventory/hosts` est généré à partir de [templates/hosts.tmpl](templates/hosts.tmpl)
+
 ## Utilisation de terraform
 
 ```bash
 # Configuration des variables
 export TF_VAR_project_id=${PROJECT_ID}
 
-# Création de l'infrastructure
+# Téléchargement des modules terraform
 terraform init
+
 terraform plan
+# Création de l'infrastructure
 terraform apply -auto-approve
 
 # Suppression de l'infrastructure
@@ -49,7 +57,7 @@ gcloud config set project ${PROJECT_ID}
 gcloud compute instances list
 
 # se connecter en SSH à une machine
-gcloud compute ssh --zone "us-west1-a" "gcpbox-01"
+gcloud compute ssh --zone "us-west1-a" "gcebox-01"
 
 # Configurer ~/.ssh/config pour simplifier l'accès SSH avec ansible
 gcloud compute config-ssh

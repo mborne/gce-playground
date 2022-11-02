@@ -1,0 +1,4 @@
+[all]
+%{ for index, name in box_hostnames ~}
+${name} ansible_ssh_host=${name}.${ zone_name }.${ project_id }
+%{ endfor ~}

@@ -1,4 +1,0 @@
-[all]
-gcpbox-01 ansible_ssh_host=gcpbox-01.us-west1-a.playground-s-11-5dab122a
-gcpbox-02 ansible_ssh_host=gcpbox-02.us-west1-a.playground-s-11-5dab122a
-gcpbox-03 ansible_ssh_host=gcpbox-03.us-west1-a.playground-s-11-5dab122a
