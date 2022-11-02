@@ -20,6 +20,7 @@ export PROJECT_ID=playground-s-11-5dab122a
 
 * [variables.tf](variables.tf) définit les variables terraform
 * [main.tf](main.tf) définit l'infrastructure dans le langage terraform
+* `inventory/hosts` est généré à partir de [templates/hosts.tmpl](templates/hosts.tmpl)
 
 ## Utilisation de terraform
 

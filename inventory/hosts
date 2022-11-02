@@ -1,4 +1,0 @@
-[all]
-gcebox-01 ansible_ssh_host=gcebox-01.us-west1-a.playground-s-11-e11e37f3
-gcebox-02 ansible_ssh_host=gcebox-02.us-west1-a.playground-s-11-e11e37f3
-gcebox-03 ansible_ssh_host=gcebox-03.us-west1-a.playground-s-11-e11e37f3
