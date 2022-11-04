@@ -64,6 +64,10 @@ gcloud compute config-ssh
 gcloud compute config-ssh --remove
 ```
 
+## Licence
+
+[MIT](LICENSE)
+
 ## Ressources
 
 * [How to create a VM with SSH enabled on GCP](https://binx.io/2022/01/07/how-to-create-a-vm-with-ssh-enabled-on-gcp/)
