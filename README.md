@@ -1,7 +1,7 @@
 
 # gce-playground
 
-Expérimentation avec [terraform](https://www.terraform.io/) et Google Compute Engine (GCE) pour créer quelques VM grace à un compte [acloudguru.com](https://acloudguru.com/)
+Expérimentation avec [terraform](https://www.terraform.io/) et Google Compute Engine (GCE) pour créer quelques VM jetables avec un compte [acloudguru.com](https://acloudguru.com/)
 
 ## Pré-requis
 
